@@ -14,7 +14,7 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-		<FileFilter id = "RTF" name = "Rich text files" extensions = "*.rtf"/>
+    <FileFilter id = "RTF" description = "RTF File"  extension = ".rtf"/>
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

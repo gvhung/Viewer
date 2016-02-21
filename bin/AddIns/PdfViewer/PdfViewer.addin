@@ -14,7 +14,7 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-		<FileFilter id = "PDF" name = "PDF Document" extensions = "*.pdf" />
+		<FileFilter id = "PDF" description = "PDF Document" extension = ".pdf" />
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

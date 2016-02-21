@@ -14,7 +14,7 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-		<FileFilter id = "PSD" name = "PhotoShop Image" extensions = "*.psd"/>
+		<FileFilter id = "PSD" description = "Photoshop Image" extension = ".psd"/>
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

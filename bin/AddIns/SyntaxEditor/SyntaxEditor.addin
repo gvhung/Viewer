@@ -14,13 +14,13 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-		<FileFilter id = "C#" name = "C# Source" extensions = "*.cs" />
-		<FileFilter id = "JS" name = "JS Source" extensions = "*.js" />
-		<FileFilter id = "Lua" name = "Lua Source" extensions = "*.lua" />
-		<FileFilter id = "VB" name = "VB Source" extensions = "*.vb" />
-		<FileFilter id = "HTML" name = "HTML Source" extensions = "*.html" />
-		<FileFilter id = "SQL" name = "SQL Source" extensions = "*.sql" />
-		<FileFilter id = "PHP" name = "PHP Source" extensions = "*.php" />
+		<FileFilter description = "C# Source File" id = "C#" extension= ".cs" />
+		<FileFilter description = "JS Source File" id = "JS" extension= ".js" />
+		<FileFilter description = "Lua Source File" id = "Lua" extension = ".lua" />
+		<FileFilter description = "VB Source File" id = "VB" extension= ".vb" />
+		<FileFilter description = "HTML Source File" id = "HTML" extension = ".html" />
+		<FileFilter description = "SQL Source File" id = "SQL" extension = ".sql" />
+		<FileFilter description = "PHP Source File" id = "PHP" extension = ".php" />
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

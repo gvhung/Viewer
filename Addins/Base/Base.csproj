@@ -70,6 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="FilterBuilder\FilterBuilder.cs" />
+    <Compile Include="FilterBuilder\FilterGroup.cs" />
+    <Compile Include="FilterBuilder\Helpers.cs" />
+    <Compile Include="FilterBuilder\SystemFileType.cs" />
     <Compile Include="Workbench.cs">
       <SubType>Form</SubType>
     </Compile>

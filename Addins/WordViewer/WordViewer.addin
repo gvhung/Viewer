@@ -14,7 +14,7 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-		<FileFilter id = "Word" name = "Word Document" extensions = "*.docx" />
+		<FileFilter id = "Word" description = "Word OpenXML Document" extension = ".docx" />
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

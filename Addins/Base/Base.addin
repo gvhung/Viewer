@@ -1,4 +1,4 @@
-﻿<AddIn name        = "Demo Application"
+﻿<AddIn name        = "Viewer"
 			 author      = "Daniel Grunwald"
 			 url         = "http://www.codeproject.com/TBD"
 			 description = "Base add-in of ICSharpCode.Core example"
@@ -18,8 +18,8 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-		<FileFilter id = "Text" name = "Text files" extensions = "*.txt"/>
-		<FileFilter id = "LogFiles" name = "Log files" extensions = "*.log"/>
+			<FileFilter id = "Text" description = "Text files" extension = ".txt"/>
+			<FileFilter id = "LogFiles" description = "Log files" extension = ".log"/>
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

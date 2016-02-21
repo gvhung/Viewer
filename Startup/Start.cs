@@ -16,8 +16,6 @@ namespace Startup
 		[STAThread]
 		public static void Main(string[] args)
 		{
-			LoggingService.Info("Application start");
-			
 			Assembly exe = typeof(Start).Assembly;
 			
 			FileUtility.ApplicationRootPath = Path.GetDirectoryName(exe.Location);
@@ -30,15 +28,15 @@ namespace Startup
 			ResourceService.RegisterNeutralStrings(new ResourceManager("Startup.StringResources", exe));
 			ResourceService.RegisterNeutralImages(new ResourceManager("Startup.ImageResources", exe));
 
-            coreStartup.AddAddInsFromDirectory(FileUtility.ApplicationRootPath);
+			coreStartup.AddAddInsFromDirectory(FileUtility.ApplicationRootPath);
 			
 			coreStartup.ConfigureExternalAddIns(Path.Combine(PropertyService.ConfigDirectory, "AddIns.xml"));
 			
 			coreStartup.ConfigureUserAddIns(Path.Combine(PropertyService.ConfigDirectory, "AddInInstallTemp"),
-			                                Path.Combine(PropertyService.ConfigDirectory, "AddIns"));
+											Path.Combine(PropertyService.ConfigDirectory, "AddIns"));
 			
 			coreStartup.RunInitialization();
-			
+
 			Workbench.InitializeWorkbench(args);
 			
 			try {

@@ -2,6 +2,8 @@
 using System.Text;
 using System.Windows.Forms;
 using ICSharpCode.Core;
+using System.Text.RegularExpressions;
+using Creek.IO.FilterBuilder;
 
 namespace Base
 {
@@ -62,11 +64,13 @@ namespace Base
 		{
 			StringBuilder b = new StringBuilder();
 			b.Append("All known file types|");
-			foreach (string filter in AddInTree.BuildItems(addInTreePath, null, true)) {
+			foreach (string filter in AddInTree.BuildItems(addInTreePath, null, true))
+			{
 				b.Append(filter.Substring(filter.IndexOf('|') + 1));
 				b.Append(';');
 			}
-			foreach (string filter in AddInTree.BuildItems(addInTreePath, null, true)) {
+			foreach (string filter in AddInTree.BuildItems(addInTreePath, null, true))
+			{
 				b.Append('|');
 				b.Append(filter);
 			}

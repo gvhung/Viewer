@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using Base;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace ImageViewer
 {
@@ -14,6 +16,11 @@ namespace ImageViewer
 			{
 				case ".png": return new ImageViewContent(fileName);
 				case ".jpg": return new ImageViewContent(fileName);
+				case ".gif": return new ImageViewContent(fileName);
+				case ".ico": return new ImageViewContent(fileName);
+				case ".tiff": return new ImageViewContent(fileName);
+				case ".wmf": return new ImageViewContent(fileName);
+				case ".emf": return new ImageViewContent(fileName);
 			}
 
 			return null;

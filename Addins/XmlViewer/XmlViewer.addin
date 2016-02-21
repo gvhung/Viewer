@@ -14,7 +14,7 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-		<FileFilter id = "XML" name = "XML Source" extensions = "*.xml" />
+		<FileFilter id = "XML" description = "XML File" extension = ".xml" />
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

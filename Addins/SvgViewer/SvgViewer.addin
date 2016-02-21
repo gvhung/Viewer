@@ -1,0 +1,25 @@
+﻿<AddIn name        = "SvgViewer"
+			 author      = "Chris Anders"
+			 url         = "http://www.codeproject.com/TBD"
+			 description = "Supports editing .rtf files in the ICSharpCode.Core example editor">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.SvgViewer" version = "@SvgViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="SvgViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+    <FileFilter id = "SVG" description = "SVG Image"  extension = ".svg"/>
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "SVG"
+					 class = "SvgViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

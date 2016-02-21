@@ -18,10 +18,12 @@ namespace Base
 					dlg.DefaultExt = ".txt";
 					dlg.Filter = FileViewContent.GetFileFilter("/Workspace/FileFilter");
 					if (dlg.ShowDialog() == DialogResult.OK) {
+						StatusService.SetStatus("Loading "+ dlg.FileName + "... ");
 						IViewContent content = DisplayBindingManager.CreateViewContent(dlg.FileName);
 						if (content != null) {
 							workbench.ShowContent(content);
 						}
+						StatusService.SetStatus("Fertig ");
 					}
 				}
 			}

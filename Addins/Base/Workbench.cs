@@ -26,10 +26,14 @@ namespace Base
 		}
 		
 		MenuStrip menu;
+		private StatusStrip statusStrip1;
+		private ToolStripStatusLabel toolStripStatusLabel1;
 		Panel contentPanel;
 		
 		private Workbench()
 		{
+			InitializeComponent();
+
 			// restore form location from last session
 			FormLocationHelper.Apply(this, "StartupFormPosition", true);
 			
@@ -39,7 +43,10 @@ namespace Base
 			
 			menu = new MenuStrip();
 			MenuService.AddItemsToMenu(menu.Items, this, "/Workbench/MainMenu");
-			
+
+			StatusService.SetLabel(toolStripStatusLabel1);
+			StatusService.SetStatus("");
+
 			this.Controls.Add(menu);
 			
 			// Start with an empty text file
@@ -134,15 +141,37 @@ namespace Base
 
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workbench));
-            this.SuspendLayout();
-            // 
-            // Workbench
-            // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Workbench";
-            this.ResumeLayout(false);
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workbench));
+			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.statusStrip1.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// statusStrip1
+			// 
+			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.toolStripStatusLabel1});
+			this.statusStrip1.Location = new System.Drawing.Point(0, 239);
+			this.statusStrip1.Name = "statusStrip1";
+			this.statusStrip1.Size = new System.Drawing.Size(284, 22);
+			this.statusStrip1.TabIndex = 0;
+			this.statusStrip1.Text = "statusStrip1";
+			// 
+			// toolStripStatusLabel1
+			// 
+			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+			// 
+			// Workbench
+			// 
+			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Controls.Add(this.statusStrip1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Name = "Workbench";
+			this.statusStrip1.ResumeLayout(false);
+			this.statusStrip1.PerformLayout();
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 	}

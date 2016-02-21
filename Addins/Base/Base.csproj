@@ -74,6 +74,7 @@
     <Compile Include="FilterBuilder\FilterGroup.cs" />
     <Compile Include="FilterBuilder\Helpers.cs" />
     <Compile Include="FilterBuilder\SystemFileType.cs" />
+    <Compile Include="StatusService.cs" />
     <Compile Include="Workbench.cs">
       <SubType>Form</SubType>
     </Compile>

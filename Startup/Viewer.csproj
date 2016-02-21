@@ -84,16 +84,16 @@
     <Content Include="Startup.exe.manifest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <ProjectReference Include="..\Base\Base.csproj">
-      <Project>{C9A2B6BC-5260-4DE3-8082-DCE8B391F7BB}</Project>
-      <Name>Base</Name>
-    </ProjectReference>
     <Content Include="data\options\AppProperties.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="AddIns\Base.addin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <ProjectReference Include="..\Addins\Base\Base.csproj">
+      <Project>{c9a2b6bc-5260-4de3-8082-dce8b391f7bb}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ICSharpCode.Core\ICSharpCode.Core.csproj">
       <Project>{35CEF10F-2D4C-45F2-9DD1-161E0FEC583C}</Project>
       <Name>ICSharpCode.Core</Name>

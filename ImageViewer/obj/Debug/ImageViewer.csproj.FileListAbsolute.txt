@@ -1,0 +1,6 @@
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\ImageViewer\ImageViewer.addin
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\ImageViewer\ImageViewer.dll
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\ImageViewer\ImageViewer.pdb
+C:\Users\filmee24\Desktop\Viewer\ImageViewer\obj\Debug\ImageViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Desktop\Viewer\ImageViewer\obj\Debug\ImageViewer.dll
+C:\Users\filmee24\Desktop\Viewer\ImageViewer\obj\Debug\ImageViewer.pdb

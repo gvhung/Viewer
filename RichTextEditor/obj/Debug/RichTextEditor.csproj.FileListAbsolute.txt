@@ -1,0 +1,12 @@
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\RichTextEditor.addin
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\RichTextEditor.dll
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\RichTextEditor.pdb
+C:\Users\filmee24\Desktop\Viewer\RichTextEditor\obj\Debug\RichTextEditor.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Desktop\Viewer\RichTextEditor\obj\Debug\RichTextEditor.dll
+C:\Users\filmee24\Desktop\Viewer\RichTextEditor\obj\Debug\RichTextEditor.pdb
+C:\Users\filmee24\Desktop\Viewer\RichTextEditor\bin\AddIns\RichTextEditor\RichTextEditor.addin
+C:\Users\filmee24\Desktop\Viewer\RichTextEditor\bin\AddIns\RichTextEditor\RichTextEditor.dll
+C:\Users\filmee24\Desktop\Viewer\RichTextEditor\bin\AddIns\RichTextEditor\RichTextEditor.pdb
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\RichTextEditor\RichTextEditor.addin
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\RichTextEditor\RichTextEditor.dll
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\RichTextEditor\RichTextEditor.pdb

@@ -1,0 +1,10 @@
+C:\Users\filmee24\Desktop\Viewer\bin\Startup.exe.config
+C:\Users\filmee24\Desktop\Viewer\bin\Startup.exe.manifest
+C:\Users\filmee24\Desktop\Viewer\bin\data\options\AppProperties.xml
+C:\Users\filmee24\Desktop\Viewer\bin\AddIns\Base.addin
+C:\Users\filmee24\Desktop\Viewer\bin\data\resources\StringResources.de.resources
+C:\Users\filmee24\Desktop\Viewer\bin\Startup.exe
+C:\Users\filmee24\Desktop\Viewer\bin\Startup.pdb
+C:\Users\filmee24\Desktop\Viewer\Startup\obj\Debug\Viewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Desktop\Viewer\Startup\obj\Debug\Startup.exe
+C:\Users\filmee24\Desktop\Viewer\Startup\obj\Debug\Startup.pdb

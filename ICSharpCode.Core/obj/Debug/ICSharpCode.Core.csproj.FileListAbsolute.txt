@@ -1,0 +1,4 @@
+C:\Users\filmee24\Desktop\Viewer\bin\ICSharpCode.Core.dll
+C:\Users\filmee24\Desktop\Viewer\bin\ICSharpCode.Core.pdb
+C:\Users\filmee24\Desktop\Viewer\ICSharpCode.Core\obj\Debug\ICSharpCode.Core.dll
+C:\Users\filmee24\Desktop\Viewer\ICSharpCode.Core\obj\Debug\ICSharpCode.Core.pdb

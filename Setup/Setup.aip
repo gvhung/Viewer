@@ -35,6 +35,7 @@
     <ROW Directory="RichTextEditor_Dir" Directory_Parent="AddIns_Dir" DefaultDir="RICHTE~1|RichTextEditor"/>
     <ROW Directory="SyntaxEditor_Dir" Directory_Parent="AddIns_Dir" DefaultDir="SYNTAX~1|SyntaxEditor"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="WordViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="WORDVI~1|WordViewer"/>
     <ROW Directory="data_Dir" Directory_Parent="APPDIR" DefaultDir="data"/>
     <ROW Directory="options_Dir" Directory_Parent="data_Dir" DefaultDir="options"/>
     <ROW Directory="resources_Dir" Directory_Parent="data_Dir" DefaultDir="RESOUR~1|resources"/>
@@ -42,9 +43,7 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="AI_CustomARPName" ComponentId="{B57E951C-599B-4DCF-89D4-F90EEF74803B}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_ExePath" ComponentId="{3D3DBF4F-4CA6-457A-BAFE-951E945383A2}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
-    <ROW Component="Base.addin" ComponentId="{6D1B0FBF-103D-473A-9881-5F38B71426D8}" Directory_="AddIns_Dir" Attributes="0" KeyPath="Base.addin" Type="0"/>
     <ROW Component="Base.dll" ComponentId="{4C59ECBD-1607-438D-ADA7-5DD141E4E9DE}" Directory_="APPDIR" Attributes="0" KeyPath="Base.dll"/>
-    <ROW Component="Base.dll_1" ComponentId="{DA262E4F-EF14-4825-87C0-69184269B523}" Directory_="AddIns_Dir" Attributes="0" KeyPath="Base.dll_1"/>
     <ROW Component="FastColoredTextBox.dll" ComponentId="{DBDCB8A3-0C44-4130-BCDD-E4A96EDE455B}" Directory_="SyntaxEditor_Dir" Attributes="0" KeyPath="FastColoredTextBox.dll"/>
     <ROW Component="ICSharpCode.Core.dll" ComponentId="{C28FB53D-863D-4387-A9B1-8322686D685A}" Directory_="APPDIR" Attributes="0" KeyPath="ICSharpCode.Core.dll"/>
     <ROW Component="ImageViewer.addin" ComponentId="{08A05745-29AF-4E09-A79D-A3939D3B1FDD}" Directory_="ImageViewer_Dir" Attributes="0" KeyPath="ImageViewer.addin"/>
@@ -57,38 +56,48 @@
     <ROW Component="StringResources.de.resources" ComponentId="{5FF67DD2-3BA2-4B50-A8D9-DA0F9B358E06}" Directory_="resources_Dir" Attributes="0" KeyPath="StringResources.de.resources" Type="0"/>
     <ROW Component="SyntaxEditor.addin" ComponentId="{58E7D1A2-5F53-436E-BBCF-5CE4499C71C2}" Directory_="SyntaxEditor_Dir" Attributes="0" KeyPath="SyntaxEditor.addin"/>
     <ROW Component="SyntaxEditor.dll" ComponentId="{6BA42AAC-D629-484B-B556-45D6403E3A28}" Directory_="SyntaxEditor_Dir" Attributes="0" KeyPath="SyntaxEditor.dll"/>
+    <ROW Component="Telerik.WinControls.RichTextBox.dll" ComponentId="{11BDF81A-210C-4DF3-A880-355EAB1724BB}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.RichTextBox.dll"/>
+    <ROW Component="Telerik.WinControls.UI.dll" ComponentId="{CA03A46D-FE4C-4021-827C-077892385345}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.UI.dll"/>
+    <ROW Component="Telerik.WinControls.dll" ComponentId="{33C9BAD3-21D1-429F-A6E7-396E52D40846}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.dll"/>
+    <ROW Component="TelerikCommon.dll" ComponentId="{D191D28B-D9CC-413C-AB00-C1BAFFD947B0}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="TelerikCommon.dll"/>
     <ROW Component="Viewer.exe" ComponentId="{6AC3A34E-81DB-4312-94DB-D6797FF150DA}" Directory_="APPDIR" Attributes="0" KeyPath="Viewer.exe"/>
+    <ROW Component="WordViewer.addin" ComponentId="{9537FA92-8B4C-4DF8-B8B7-399136AB8899}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="WordViewer.addin"/>
+    <ROW Component="WordViewer.dll" ComponentId="{5102AB90-97ED-43F4-92B3-3A59528F2AD0}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="WordViewer.dll"/>
     <ROW Component="log4net.dll" ComponentId="{6102F1A8-E3CF-4720-BCF3-BFF65772598F}" Directory_="APPDIR" Attributes="0" KeyPath="log4net.dll"/>
-    <ROW Component="log4net.dll_2" ComponentId="{E2D4AA9C-E3A0-4D80-B9B1-72D162DE7586}" Directory_="SyntaxEditor_Dir" Attributes="0" KeyPath="log4net.dll_2"/>
     <ROW Component="options" ComponentId="{5F5BF073-5D82-4027-ABCB-7959635EBB29}" Directory_="options_Dir" Attributes="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="Feature" Title="Addins" Description="Description" Display="3" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ROW Feature="Feature_1" Feature_Parent="Feature" Title="Images" Description="Description" Display="5" Level="1" Directory_="APPDIR" Attributes="0" Components="ImageViewer.addin ImageViewer.dll"/>
     <ROW Feature="Feature_2" Feature_Parent="Feature" Title="RTF" Description="Description" Display="7" Level="1" Directory_="APPDIR" Attributes="0" Components="RichTextEditor.addin RichTextEditor.dll"/>
-    <ROW Feature="Feature_3" Feature_Parent="Feature" Title="Sources" Description="Description" Display="9" Level="1" Directory_="APPDIR" Attributes="0" Components="FastColoredTextBox.dll SyntaxEditor.addin SyntaxEditor.dll log4net.dll_2"/>
+    <ROW Feature="Feature_3" Feature_Parent="Feature" Title="Sources" Description="Description" Display="9" Level="1" Directory_="APPDIR" Attributes="0" Components="FastColoredTextBox.dll SyntaxEditor.addin SyntaxEditor.dll"/>
     <ROW Feature="Feature_4" Feature_Parent="Feature_1" Title="PhotoShop" Description="Description" Display="11" Level="1" Directory_="APPDIR" Attributes="0" Components="PsdViewer.addin PsdViewer.dll"/>
-    <ROW Feature="MainFeature" Title="Core" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_CustomARPName AI_ExePath Base.addin Base.dll Base.dll_1 ICSharpCode.Core.dll ProductInformation StringResources.de.resources Viewer.exe log4net.dll options"/>
+    <ROW Feature="Feature_5" Feature_Parent="Feature" Title="Office" Description="Description" Display="13" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ROW Feature="Feature_6" Feature_Parent="Feature_5" Title="Word" Description="Description" Display="15" Level="1" Directory_="APPDIR" Attributes="0" Components="Telerik.WinControls.RichTextBox.dll Telerik.WinControls.UI.dll Telerik.WinControls.dll TelerikCommon.dll WordViewer.addin WordViewer.dll"/>
+    <ROW Feature="MainFeature" Title="Core" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_CustomARPName AI_ExePath Base.dll ICSharpCode.Core.dll ProductInformation StringResources.de.resources Viewer.exe log4net.dll options"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="Base.addin" Component_="Base.addin" FileName="BASE~1.ADD|Base.addin" Attributes="0" SourcePath="..\bin\AddIns\Base.addin" SelfReg="false" NextFile="Base.dll_1"/>
     <ROW File="Base.dll" Component_="Base.dll" FileName="Base.dll" Attributes="0" SourcePath="..\bin\Base.dll" SelfReg="false" NextFile="ICSharpCode.Core.dll"/>
-    <ROW File="Base.dll_1" Component_="Base.dll_1" FileName="Base.dll" Attributes="0" SourcePath="..\bin\AddIns\Base.dll" SelfReg="false" NextFile="ImageViewer.addin"/>
-    <ROW File="FastColoredTextBox.dll" Component_="FastColoredTextBox.dll" FileName="FASTCO~1.DLL|FastColoredTextBox.dll" Attributes="0" SourcePath="..\bin\AddIns\SyntaxEditor\FastColoredTextBox.dll" SelfReg="false" NextFile="log4net.dll_2"/>
+    <ROW File="FastColoredTextBox.dll" Component_="FastColoredTextBox.dll" FileName="FASTCO~1.DLL|FastColoredTextBox.dll" Attributes="0" SourcePath="..\bin\AddIns\SyntaxEditor\FastColoredTextBox.dll" SelfReg="false" NextFile="SyntaxEditor.addin"/>
     <ROW File="ICSharpCode.Core.dll" Component_="ICSharpCode.Core.dll" FileName="ICSHAR~1.DLL|ICSharpCode.Core.dll" Attributes="0" SourcePath="..\bin\ICSharpCode.Core.dll" SelfReg="false" NextFile="log4net.dll"/>
     <ROW File="ImageViewer.addin" Component_="ImageViewer.addin" FileName="IMAGEV~1.ADD|ImageViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\ImageViewer\ImageViewer.addin" SelfReg="false" NextFile="ImageViewer.dll"/>
     <ROW File="ImageViewer.dll" Component_="ImageViewer.dll" FileName="IMAGEV~1.DLL|ImageViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\ImageViewer\ImageViewer.dll" SelfReg="false" NextFile="RichTextEditor.addin"/>
-    <ROW File="PsdViewer.addin" Component_="PsdViewer.addin" FileName="PSDVIE~1.ADD|PsdViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\PsdViewer\PsdViewer.addin" SelfReg="false"/>
+    <ROW File="PsdViewer.addin" Component_="PsdViewer.addin" FileName="PSDVIE~1.ADD|PsdViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\PsdViewer\PsdViewer.addin" SelfReg="false" NextFile="Telerik.WinControls.dll"/>
     <ROW File="PsdViewer.dll" Component_="PsdViewer.dll" FileName="PSDVIE~1.DLL|PsdViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\PsdViewer\PsdViewer.dll" SelfReg="false" NextFile="PsdViewer.addin"/>
     <ROW File="RichTextEditor.addin" Component_="RichTextEditor.addin" FileName="RICHTE~1.ADD|RichTextEditor.addin" Attributes="0" SourcePath="..\bin\AddIns\RichTextEditor\RichTextEditor.addin" SelfReg="false" NextFile="RichTextEditor.dll"/>
     <ROW File="RichTextEditor.dll" Component_="RichTextEditor.dll" FileName="RICHTE~1.DLL|RichTextEditor.dll" Attributes="0" SourcePath="..\bin\AddIns\RichTextEditor\RichTextEditor.dll" SelfReg="false" NextFile="FastColoredTextBox.dll"/>
-    <ROW File="StringResources.de.resources" Component_="StringResources.de.resources" FileName="STRING~1.RES|StringResources.de.resources" Attributes="0" SourcePath="..\bin\data\resources\StringResources.de.resources" SelfReg="false" NextFile="Base.addin"/>
+    <ROW File="StringResources.de.resources" Component_="StringResources.de.resources" FileName="STRING~1.RES|StringResources.de.resources" Attributes="0" SourcePath="..\bin\data\resources\StringResources.de.resources" SelfReg="false" NextFile="ImageViewer.addin"/>
     <ROW File="SyntaxEditor.addin" Component_="SyntaxEditor.addin" FileName="SYNTAX~1.ADD|SyntaxEditor.addin" Attributes="0" SourcePath="..\bin\AddIns\SyntaxEditor\SyntaxEditor.addin" SelfReg="false" NextFile="SyntaxEditor.dll"/>
     <ROW File="SyntaxEditor.dll" Component_="SyntaxEditor.dll" FileName="SYNTAX~1.DLL|SyntaxEditor.dll" Attributes="0" SourcePath="..\bin\AddIns\SyntaxEditor\SyntaxEditor.dll" SelfReg="false" NextFile="PsdViewer.dll"/>
+    <ROW File="Telerik.WinControls.RichTextBox.dll" Component_="Telerik.WinControls.RichTextBox.dll" FileName="TELERI~2.DLL|Telerik.WinControls.RichTextBox.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\Telerik.WinControls.RichTextBox.dll" SelfReg="false" NextFile="Telerik.WinControls.UI.dll"/>
+    <ROW File="Telerik.WinControls.UI.dll" Component_="Telerik.WinControls.UI.dll" FileName="TELERI~3.DLL|Telerik.WinControls.UI.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\Telerik.WinControls.UI.dll" SelfReg="false" NextFile="TelerikCommon.dll"/>
+    <ROW File="Telerik.WinControls.dll" Component_="Telerik.WinControls.dll" FileName="TELERI~1.DLL|Telerik.WinControls.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\Telerik.WinControls.dll" SelfReg="false" NextFile="Telerik.WinControls.RichTextBox.dll"/>
+    <ROW File="TelerikCommon.dll" Component_="TelerikCommon.dll" FileName="TELERI~4.DLL|TelerikCommon.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\TelerikCommon.dll" SelfReg="false" NextFile="WordViewer.addin"/>
     <ROW File="Viewer.exe" Component_="Viewer.exe" FileName="Viewer.exe" Attributes="0" SourcePath="..\bin\Viewer.exe" SelfReg="false" NextFile="StringResources.de.resources" DigSign="true"/>
+    <ROW File="WordViewer.addin" Component_="WordViewer.addin" FileName="WORDVI~1.ADD|WordViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\WordViewer.addin" SelfReg="false" NextFile="WordViewer.dll"/>
+    <ROW File="WordViewer.dll" Component_="WordViewer.dll" FileName="WORDVI~1.DLL|WordViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\WordViewer.dll" SelfReg="false"/>
     <ROW File="log4net.dll" Component_="log4net.dll" FileName="log4net.dll" Attributes="0" SourcePath="..\bin\log4net.dll" SelfReg="false" NextFile="Viewer.exe"/>
-    <ROW File="log4net.dll_2" Component_="log4net.dll_2" FileName="log4net.dll" Attributes="0" SourcePath="..\bin\AddIns\SyntaxEditor\log4net.dll" SelfReg="false" NextFile="SyntaxEditor.addin"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\Setups" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExeIconPath="..\Startup\1456077855_view.ico" ExtractionFolder="[AppDataFolder]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="Viewer Setup_[|ProductVersion]" UACExecutionLevel="2"/>

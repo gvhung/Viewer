@@ -29,8 +29,8 @@ namespace Startup
 			
 			ResourceService.RegisterNeutralStrings(new ResourceManager("Startup.StringResources", exe));
 			ResourceService.RegisterNeutralImages(new ResourceManager("Startup.ImageResources", exe));
-			
-			coreStartup.AddAddInsFromDirectory(Path.Combine(FileUtility.ApplicationRootPath, "AddIns"));
+
+            coreStartup.AddAddInsFromDirectory(FileUtility.ApplicationRootPath);
 			
 			coreStartup.ConfigureExternalAddIns(Path.Combine(PropertyService.ConfigDirectory, "AddIns.xml"));
 			

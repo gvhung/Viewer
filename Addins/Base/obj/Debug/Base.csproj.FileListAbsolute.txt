@@ -22,3 +22,4 @@ C:\Users\filmee24\Documents\GitHub\Viewer\Addins\Base\obj\Debug\Base.csproj.Gene
 C:\Users\filmee24\Documents\GitHub\Viewer\Addins\Base\obj\Debug\Base.dll
 C:\Users\filmee24\Documents\GitHub\Viewer\Addins\Base\obj\Debug\Base.pdb
 C:\Users\filmee24\Documents\GitHub\Viewer\Addins\bin\Base.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\Base.addin

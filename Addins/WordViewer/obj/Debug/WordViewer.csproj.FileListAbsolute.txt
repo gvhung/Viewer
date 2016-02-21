@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\WordViewer\obj\Debug\WordViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\WordViewer\WordViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\WordViewer\WordViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\WordViewer\WordViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\WordViewer\obj\Debug\WordViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\WordViewer\obj\Debug\WordViewer.pdb

@@ -2,7 +2,7 @@
 
 namespace Base
 {
-    internal class StatusService
+    public class StatusService
     {
         private static ToolStripStatusLabel label;
 

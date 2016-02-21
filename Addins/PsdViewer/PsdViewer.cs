@@ -31,6 +31,7 @@ namespace PsdViewer
 
 		public ImageViewContent(string fileName) : this()
 		{
+			StatusService.SetStatus("Loading " + fileName + "...");
 			loadPSD(fileName);
 
 			this.FileName = fileName;
@@ -43,6 +44,8 @@ namespace PsdViewer
 				var psd = new PsdFile(fileName);
 				textBox.Image = psd.CompositImage;
 			});
+
+			StatusService.SetStatus("Done");
 		}
 
 		public override Control Control => textBox;

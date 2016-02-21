@@ -37,7 +37,7 @@ namespace ICSharpCode.Core
 		
 		public object BuildItem(object caller, Codon codon, ArrayList subItems)
 		{
-			return StringParser.Parse(codon.Properties["description"]) + "|" + codon.Properties["extension"];
+			return StringParser.Parse(codon.Properties["description"]) + "|*" + codon.Properties["extension"];
 		}
 	}
 }

@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\SvgViewer\SvgViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\SvgViewer\SvgViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\SvgViewer\SvgViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\SvgViewer\obj\Debug\SvgViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\SvgViewer\obj\Debug\SvgViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\SvgViewer\obj\Debug\SvgViewer.pdb

@@ -16,7 +16,6 @@
 	<Path name = "/Workspace/FileFilter">
 		<FileFilter id = "PNG" name = "PNG Image" extensions = "*.png"/>
 		<FileFilter id = "JPG" name = "JPG Image" extensions = "*.jpg"/>
-		<FileFilter id = "PSD" name = "PhotoShop Image" extensions = "*.psd"/>
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

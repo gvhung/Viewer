@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Windows.Forms;
 using Base;
-using Photoshop;
 using System.Threading.Tasks;
 
 namespace ImageViewer
@@ -13,7 +12,6 @@ namespace ImageViewer
 			string extension = Path.GetExtension(fileName).ToLowerInvariant();
 			switch (extension)
 			{
-				case ".psd": return new ImageViewContent(fileName);
 				case ".png": return new ImageViewContent(fileName);
 				case ".jpg": return new ImageViewContent(fileName);
 			}
@@ -30,27 +28,12 @@ namespace ImageViewer
 		{
 			
 		}
-		
+
 		public ImageViewContent(string fileName) : this()
 		{
-			if (!fileName.EndsWith(".psd"))
-			{
-				textBox.Load(fileName);
-			}
-			else
-			{
-				loadPSD(fileName);
-			}
-			this.FileName = fileName;
-		}
+			textBox.Load(fileName);
 
-		private async void loadPSD(string fileName)
-		{
-			await Task.Run(() =>
-			{
-				var psd = new PsdFile(fileName);
-				textBox.Image = psd.CompositImage;
-			});
+			this.FileName = fileName;
 		}
 
 		public override Control Control => textBox;

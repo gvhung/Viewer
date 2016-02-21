@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Startup</RootNamespace>
-    <AssemblyName>Startup</AssemblyName>
+    <AssemblyName>Viewer</AssemblyName>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0AF8FEF6-32B9-46BD-A270-AB3B20EB39A3}</ProjectGuid>

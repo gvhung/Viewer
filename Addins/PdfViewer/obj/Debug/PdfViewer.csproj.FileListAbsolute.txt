@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\PdfViewer\PdfViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\PdfViewer\PdfViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\PdfViewer\PdfViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\PdfViewer\obj\Debug\PdfViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\PdfViewer\obj\Debug\PdfViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\PdfViewer\obj\Debug\PdfViewer.pdb

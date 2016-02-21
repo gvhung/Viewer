@@ -1,0 +1,25 @@
+﻿<AddIn name        = "PDF Viwerr"
+			 author      = "Chris Anders"
+			 url         = "http://furesoft.xyz/"
+			 description = "Open Programming Source Files with Highlighting">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.PDF" version = "@PdfViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="PdfViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "PDF" name = "PDF Document" extensions = "*.pdf" />
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "PDF"
+					 class = "PdfViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

@@ -13,7 +13,6 @@ namespace SyntaxEditor
 			switch (extension)
 			{
 				case ".cs": return new SyntaxViewContent(fileName, extension);
-				case ".xml": return new SyntaxViewContent(fileName, extension);
 				case ".html": return new SyntaxViewContent(fileName, extension);
 				case ".vb": return new SyntaxViewContent(fileName, extension);
 				case ".lua": return new SyntaxViewContent(fileName, extension);
@@ -70,9 +69,6 @@ namespace SyntaxEditor
 					break;
 				case ".vb":
 					textBox.Language = Language.VB;
-					break;
-				case ".xml":
-					textBox.Language = Language.XML;
 					break;
 			}
 			

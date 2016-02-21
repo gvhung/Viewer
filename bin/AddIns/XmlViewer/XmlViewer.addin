@@ -1,0 +1,25 @@
+﻿<AddIn name        = "Syntax Editor"
+			 author      = "Chris Anders"
+			 url         = "http://furesoft.xyz/"
+			 description = "Open Programming Source Files with Highlighting">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.XML" version = "@XmlViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="XmlViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "XML" name = "XML Source" extensions = "*.xml" />
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "XML"
+					 class = "XmlViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

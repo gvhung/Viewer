@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\XmlViewer\XmlViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\XmlViewer\XmlViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\XmlViewer\XmlViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\XmlViewer\obj\Debug\XmlViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\XmlViewer\obj\Debug\XmlViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\XmlViewer\obj\Debug\XmlViewer.pdb

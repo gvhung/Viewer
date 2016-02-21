@@ -18,7 +18,6 @@
 		<FileFilter id = "JS" name = "JS Source" extensions = "*.js" />
 		<FileFilter id = "Lua" name = "Lua Source" extensions = "*.lua" />
 		<FileFilter id = "VB" name = "VB Source" extensions = "*.vb" />
-		<FileFilter id = "XML" name = "XML Source" extensions = "*.xml" />
 		<FileFilter id = "HTML" name = "HTML Source" extensions = "*.html" />
 		<FileFilter id = "SQL" name = "SQL Source" extensions = "*.sql" />
 		<FileFilter id = "PHP" name = "PHP Source" extensions = "*.php" />

@@ -1,0 +1,29 @@
+﻿<AddIn name        = "Media Viewer"
+			 author      = "Chris Anders"
+			 url         = "http://furesoft.xyz/"
+			 description = "Open Programming Source Files with Highlighting">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.Media" version = "@MediaViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="MediaViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "MP3" description = "MP3  Audio" extension = ".mp3" />
+		<FileFilter id = "OGG" description = "OGG  Audio" extension = ".ogg" />
+
+		<FileFilter id = "AVI" description = "AVI  Video" extension = ".avi" />
+		<FileFilter id = "MP4" description = "MP4  Video" extension = ".mp4" />
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "Media"
+					 class = "MediaViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

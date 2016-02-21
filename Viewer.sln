@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxEditor", "SyntaxEdito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewer", "ImageViewer\ImageViewer.csproj", "{5D33EFFA-09F4-4E8A-BC42-5EB2FDB30377}"
 EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "Setup", "Setup\Setup.aiproj", "{BB8834AE-CC2D-4D63-BBD7-924D90CC4BB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{5D33EFFA-09F4-4E8A-BC42-5EB2FDB30377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D33EFFA-09F4-4E8A-BC42-5EB2FDB30377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D33EFFA-09F4-4E8A-BC42-5EB2FDB30377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8834AE-CC2D-4D63-BBD7-924D90CC4BB8}.Debug|Any CPU.ActiveCfg = All
+		{BB8834AE-CC2D-4D63-BBD7-924D90CC4BB8}.Debug|Any CPU.Build.0 = All
+		{BB8834AE-CC2D-4D63-BBD7-924D90CC4BB8}.Release|Any CPU.ActiveCfg = All
+		{BB8834AE-CC2D-4D63-BBD7-924D90CC4BB8}.Release|Any CPU.Build.0 = All
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

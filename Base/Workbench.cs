@@ -134,14 +134,15 @@ namespace Base
 
 		private void InitializeComponent()
 		{
-			this.SuspendLayout();
-			// 
-			// Workbench
-			// 
-			this.ClientSize = new System.Drawing.Size(284, 261);
-			this.Name = "Workbench";
-			this.ShowIcon = false;
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workbench));
+            this.SuspendLayout();
+            // 
+            // Workbench
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Workbench";
+            this.ResumeLayout(false);
 
 		}
 	}

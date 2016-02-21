@@ -6,3 +6,10 @@ C:\Users\filmee24\Desktop\Viewer\Base\obj\Debug\Base.csproj.GenerateResource.Cac
 C:\Users\filmee24\Desktop\Viewer\Base\obj\Debug\Base.dll
 C:\Users\filmee24\Desktop\Viewer\Base\obj\Debug\Base.pdb
 C:\Users\filmee24\Desktop\Viewer\Base\obj\Debug\Base.Workbench.resources
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\Base.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\Base.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Base\obj\Debug\Base.InfoForm.resources
+C:\Users\filmee24\Documents\GitHub\Viewer\Base\obj\Debug\Base.Workbench.resources
+C:\Users\filmee24\Documents\GitHub\Viewer\Base\obj\Debug\Base.csproj.GenerateResource.Cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Base\obj\Debug\Base.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Base\obj\Debug\Base.pdb

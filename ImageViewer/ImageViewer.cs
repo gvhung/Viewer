@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Base;
 using Photoshop;
+using System.Threading.Tasks;
 
 namespace ImageViewer
 {
@@ -38,10 +39,18 @@ namespace ImageViewer
 			}
 			else
 			{
-				var psd = new PsdFile(fileName);
-				textBox.Image = psd.CompositImage;
+				loadPSD(fileName);
 			}
 			this.FileName = fileName;
+		}
+
+		private async void loadPSD(string fileName)
+		{
+			await Task.Run(() =>
+			{
+				var psd = new PsdFile(fileName);
+				textBox.Image = psd.CompositImage;
+			});
 		}
 
 		public override Control Control => textBox;

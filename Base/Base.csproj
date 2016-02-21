@@ -56,6 +56,9 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1456077855_view.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -88,6 +91,7 @@
     <Content Include="..\Startup\AddIns\Base.addin">
       <Link>Base.addin</Link>
     </Content>
+    <Content Include="1456077855_view.ico" />
     <ProjectReference Include="..\ICSharpCode.Core\ICSharpCode.Core.csproj">
       <Project>{35CEF10F-2D4C-45F2-9DD1-161E0FEC583C}</Project>
       <Name>ICSharpCode.Core</Name>

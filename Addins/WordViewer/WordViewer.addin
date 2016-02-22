@@ -1,4 +1,4 @@
-﻿<AddIn name        = "Syntax Editor"
+﻿<AddIn name        = "Word Viewer"
 			 author      = "Chris Anders"
 			 url         = "http://furesoft.xyz/"
 			 description = "Open Programming Source Files with Highlighting">

@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\ExcelViewer\ExcelViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\ExcelViewer\ExcelViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\ExcelViewer\ExcelViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\ExcelViewer\obj\Debug\ExcelViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\ExcelViewer\obj\Debug\ExcelViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\ExcelViewer\obj\Debug\ExcelViewer.pdb

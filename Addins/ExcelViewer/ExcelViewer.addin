@@ -1,0 +1,25 @@
+﻿<AddIn name        = "Excel Viewer"
+			 author      = "Chris Anders"
+			 url         = "http://furesoft.xyz/"
+			 description = "Open Programming Source Files with Highlighting">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.Excel" version = "@ExcelViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="ExcelViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "Excel" description = "Excel SpreadSheet" extension = ".xlsx" />
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "Excel"
+					 class = "ExcelViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

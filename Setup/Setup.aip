@@ -30,6 +30,7 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
     <ROW Directory="AddIns_Dir" Directory_Parent="APPDIR" DefaultDir="AddIns"/>
+    <ROW Directory="DbfViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="DBFVIE~1|DbfViewer"/>
     <ROW Directory="DllViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="DLLVIE~1|DllViewer"/>
     <ROW Directory="ExcelViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="EXCELV~1|ExcelViewer"/>
     <ROW Directory="ImageViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="IMAGEV~1|ImageViewer"/>
@@ -40,6 +41,7 @@
     <ROW Directory="RichTextEditor_Dir" Directory_Parent="AddIns_Dir" DefaultDir="RICHTE~1|RichTextEditor"/>
     <ROW Directory="SyntaxEditor_Dir" Directory_Parent="AddIns_Dir" DefaultDir="SYNTAX~1|SyntaxEditor"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TsspViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="TSSPVI~1|TsspViewer"/>
     <ROW Directory="WordViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="WORDVI~1|WordViewer"/>
     <ROW Directory="XmlViewer_Dir" Directory_Parent="AddIns_Dir" DefaultDir="XMLVIE~1|XmlViewer"/>
     <ROW Directory="data_Dir" Directory_Parent="APPDIR" DefaultDir="data"/>
@@ -51,6 +53,8 @@
     <ROW Component="AI_ExePath" ComponentId="{3D3DBF4F-4CA6-457A-BAFE-951E945383A2}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="Base.dll" ComponentId="{4C59ECBD-1607-438D-ADA7-5DD141E4E9DE}" Directory_="APPDIR" Attributes="0" KeyPath="Base.dll"/>
     <ROW Component="DLLViewer.dll" ComponentId="{0716A16C-FED9-4504-B9E9-FF2F01916161}" Directory_="DllViewer_Dir" Attributes="0" KeyPath="DLLViewer.dll"/>
+    <ROW Component="DbfViewer.addin" ComponentId="{641E52C2-8665-4DDA-B22B-63001C50CA5B}" Directory_="DbfViewer_Dir" Attributes="0" KeyPath="DbfViewer.addin"/>
+    <ROW Component="DbfViewer.dll" ComponentId="{8D19F82C-1085-449C-8718-AC683F9F95DB}" Directory_="DbfViewer_Dir" Attributes="0" KeyPath="DbfViewer.dll"/>
     <ROW Component="DllViewer.addin" ComponentId="{C64C8D79-3668-4C0C-A6C6-BD372F708E6D}" Directory_="DllViewer_Dir" Attributes="0" KeyPath="DllViewer.addin"/>
     <ROW Component="ExcelViewer.addin" ComponentId="{C647ABBC-7782-4A06-B534-B9F51BBE2E72}" Directory_="ExcelViewer_Dir" Attributes="0" KeyPath="ExcelViewer.addin"/>
     <ROW Component="ExcelViewer.dll" ComponentId="{8B060786-54D6-4D6F-84F8-FF9B326752FA}" Directory_="ExcelViewer_Dir" Attributes="0" KeyPath="ExcelViewer.dll"/>
@@ -72,14 +76,26 @@
     <ROW Component="StringResources.de.resources" ComponentId="{5FF67DD2-3BA2-4B50-A8D9-DA0F9B358E06}" Directory_="resources_Dir" Attributes="0" KeyPath="StringResources.de.resources" Type="0"/>
     <ROW Component="SyntaxEditor.addin" ComponentId="{58E7D1A2-5F53-436E-BBCF-5CE4499C71C2}" Directory_="SyntaxEditor_Dir" Attributes="0" KeyPath="SyntaxEditor.addin"/>
     <ROW Component="SyntaxEditor.dll" ComponentId="{6BA42AAC-D629-484B-B556-45D6403E3A28}" Directory_="SyntaxEditor_Dir" Attributes="0" KeyPath="SyntaxEditor.dll"/>
+    <ROW Component="Telerik.WinControls.ChartView.dll" ComponentId="{0D78D16B-737F-487D-BA52-0437DF7F0773}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.ChartView.dll"/>
+    <ROW Component="Telerik.WinControls.GridView.dll" ComponentId="{4EDA3D0D-2CCA-4596-A6CA-4B64064B364A}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.GridView.dll"/>
     <ROW Component="Telerik.WinControls.PdfViewer.dll" ComponentId="{C777E4F7-D136-420C-A805-5320E892219A}" Directory_="PdfViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.PdfViewer.dll"/>
+    <ROW Component="Telerik.WinControls.PdfViewer.dll_1" ComponentId="{DF3631AA-A015-4D19-AD00-43C50A8A4094}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.PdfViewer.dll_1"/>
+    <ROW Component="Telerik.WinControls.PivotGrid.dll" ComponentId="{88E5EBC3-645F-46BE-BB7F-28CCECBE34F4}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.PivotGrid.dll"/>
+    <ROW Component="Telerik.WinControls.RadDock.dll" ComponentId="{A3D90558-3DD1-49CC-8F6D-76B69FDEC5D3}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.RadDock.dll"/>
     <ROW Component="Telerik.WinControls.RichTextBox.dll" ComponentId="{11BDF81A-210C-4DF3-A880-355EAB1724BB}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.RichTextBox.dll"/>
     <ROW Component="Telerik.WinControls.UI.dll" ComponentId="{CA03A46D-FE4C-4021-827C-077892385345}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.UI.dll"/>
     <ROW Component="Telerik.WinControls.UI.dll_1" ComponentId="{4ED3DCB2-93A8-4F33-BE48-D29086E348D1}" Directory_="PdfViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.UI.dll_1"/>
+    <ROW Component="Telerik.WinControls.UI.dll_2" ComponentId="{E19E6A09-F018-46B6-95CB-FDFDDFBB9137}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.UI.dll_2"/>
     <ROW Component="Telerik.WinControls.dll" ComponentId="{33C9BAD3-21D1-429F-A6E7-396E52D40846}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.dll"/>
     <ROW Component="Telerik.WinControls.dll_1" ComponentId="{6F21E018-4159-498F-B7D2-E0FB9574F8D6}" Directory_="PdfViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.dll_1"/>
+    <ROW Component="Telerik.WinControls.dll_2" ComponentId="{AC2049FF-54B1-4FF6-AD29-81037B1EF75E}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.WinControls.dll_2"/>
+    <ROW Component="Telerik.Windows.Controls.dll" ComponentId="{5460491B-06F6-435C-B1B3-85F8C7DA17A0}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="Telerik.Windows.Controls.dll"/>
     <ROW Component="TelerikCommon.dll" ComponentId="{D191D28B-D9CC-413C-AB00-C1BAFFD947B0}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="TelerikCommon.dll"/>
     <ROW Component="TelerikCommon.dll_1" ComponentId="{23923B02-16F3-4933-8BF1-360F44C23C2E}" Directory_="PdfViewer_Dir" Attributes="0" KeyPath="TelerikCommon.dll_1"/>
+    <ROW Component="TelerikCommon.dll_2" ComponentId="{C0BB2392-5AF5-4764-9573-3C6120FBF824}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="TelerikCommon.dll_2"/>
+    <ROW Component="TelerikData.dll" ComponentId="{57ED8BFC-5E26-44DE-BAA8-916009BCB4B4}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="TelerikData.dll"/>
+    <ROW Component="TsspViewer.addin" ComponentId="{14E44C6E-5ED3-4CF6-8DDC-EBF7B07D0367}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="TsspViewer.addin" Type="0"/>
+    <ROW Component="TsspViewer.dll" ComponentId="{A24C6132-626A-4E03-8A66-6441F8F1AACB}" Directory_="TsspViewer_Dir" Attributes="0" KeyPath="TsspViewer.dll"/>
     <ROW Component="Viewer.exe" ComponentId="{6AC3A34E-81DB-4312-94DB-D6797FF150DA}" Directory_="APPDIR" Attributes="0" KeyPath="Viewer.exe"/>
     <ROW Component="WordViewer.addin" ComponentId="{9537FA92-8B4C-4DF8-B8B7-399136AB8899}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="WordViewer.addin"/>
     <ROW Component="WordViewer.dll" ComponentId="{5102AB90-97ED-43F4-92B3-3A59528F2AD0}" Directory_="WordViewer_Dir" Attributes="0" KeyPath="WordViewer.dll"/>
@@ -90,7 +106,8 @@
     <ROW Component="unvell.ReoGrid.dll" ComponentId="{C38DF6AF-1623-432F-9D69-8EF62E394001}" Directory_="ExcelViewer_Dir" Attributes="0" KeyPath="unvell.ReoGrid.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
-    <ROW Feature="Core" Title="Core" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="16" Components="AI_CustomARPName AI_ExePath Base.dll ICSharpCode.Core.dll ProductInformation StringResources.de.resources Viewer.exe log4net.dll options"/>
+    <ROW Feature="Core" Title="Core" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="16" Components="AI_CustomARPName AI_ExePath Base.dll ICSharpCode.Core.dll ProductInformation StringResources.de.resources Telerik.WinControls.ChartView.dll Telerik.WinControls.GridView.dll Telerik.WinControls.PdfViewer.dll_1 Telerik.WinControls.PivotGrid.dll Telerik.WinControls.RadDock.dll Telerik.WinControls.UI.dll_2 Telerik.WinControls.dll_2 Telerik.Windows.Controls.dll TelerikCommon.dll_2 TelerikData.dll TsspViewer.addin TsspViewer.dll Viewer.exe log4net.dll options"/>
+    <ROW Feature="Dbf" Feature_Parent="Feature" Title="Dbf" Description="Opens Dbf Database" Display="27" Level="1" Directory_="APPDIR" Attributes="0" Components="DbfViewer.addin DbfViewer.dll"/>
     <ROW Feature="Excel" Feature_Parent="Office" Title="Excel" Description="Open Excel Spreadsheets" Display="21" Level="1" Directory_="APPDIR" Attributes="0" Components="ExcelViewer.addin ExcelViewer.dll unvell.ReoGrid.dll"/>
     <ROW Feature="Feature" Title="Addins" Description="Description" Display="3" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ROW Feature="Feature_1" Feature_Parent="Feature" Title="DLL" Description="Description" Display="23" Level="1" Directory_="APPDIR" Attributes="0" Components="DLLViewer.dll DllViewer.addin"/>
@@ -109,6 +126,8 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
     <ROW File="Base.dll" Component_="Base.dll" FileName="Base.dll" Attributes="0" SourcePath="..\bin\Base.dll" SelfReg="false" NextFile="ICSharpCode.Core.dll"/>
     <ROW File="DLLViewer.dll" Component_="DLLViewer.dll" FileName="DLLVIE~1.DLL|DLLViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\DllViewer\DLLViewer.dll" SelfReg="false" NextFile="IniViewer.addin"/>
+    <ROW File="DbfViewer.addin" Component_="DbfViewer.addin" FileName="DBFVIE~1.ADD|DbfViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\DbfViewer\DbfViewer.addin" SelfReg="false" NextFile="DbfViewer.dll"/>
+    <ROW File="DbfViewer.dll" Component_="DbfViewer.dll" FileName="DBFVIE~1.DLL|DbfViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\DbfViewer\DbfViewer.dll" SelfReg="false" NextFile="Telerik.WinControls.ChartView.dll"/>
     <ROW File="DllViewer.addin" Component_="DllViewer.addin" FileName="DLLVIE~1.ADD|DllViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\DllViewer\DllViewer.addin" SelfReg="false" NextFile="DLLViewer.dll"/>
     <ROW File="ExcelViewer.addin" Component_="ExcelViewer.addin" FileName="EXCELV~1.ADD|ExcelViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\ExcelViewer\ExcelViewer.addin" SelfReg="false" NextFile="ExcelViewer.dll"/>
     <ROW File="ExcelViewer.dll" Component_="ExcelViewer.dll" FileName="EXCELV~1.DLL|ExcelViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\ExcelViewer\ExcelViewer.dll" SelfReg="false" NextFile="unvell.ReoGrid.dll"/>
@@ -117,7 +136,7 @@
     <ROW File="ImageViewer.addin" Component_="ImageViewer.addin" FileName="IMAGEV~1.ADD|ImageViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\ImageViewer\ImageViewer.addin" SelfReg="false" NextFile="ImageViewer.dll"/>
     <ROW File="ImageViewer.dll" Component_="ImageViewer.dll" FileName="IMAGEV~1.DLL|ImageViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\ImageViewer\ImageViewer.dll" SelfReg="false" NextFile="RichTextEditor.addin"/>
     <ROW File="IniViewer.addin" Component_="IniViewer.addin" FileName="INIVIE~1.ADD|IniViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\IniViewer\IniViewer.addin" SelfReg="false" NextFile="IniViewer.dll"/>
-    <ROW File="IniViewer.dll" Component_="IniViewer.dll" FileName="INIVIE~1.DLL|IniViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\IniViewer\IniViewer.dll" SelfReg="false"/>
+    <ROW File="IniViewer.dll" Component_="IniViewer.dll" FileName="INIVIE~1.DLL|IniViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\IniViewer\IniViewer.dll" SelfReg="false" NextFile="DbfViewer.addin"/>
     <ROW File="MediaViewer.addin" Component_="MediaViewer.addin" FileName="MEDIAV~1.ADD|MediaViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\MediaViewer\MediaViewer.addin" SelfReg="false" NextFile="MediaViewer.dll"/>
     <ROW File="MediaViewer.dll" Component_="MediaViewer.dll" FileName="MEDIAV~1.DLL|MediaViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\MediaViewer\MediaViewer.dll" SelfReg="false" NextFile="ExcelViewer.addin"/>
     <ROW File="PdfViewer.addin" Component_="PdfViewer.addin" FileName="PDFVIE~1.ADD|PdfViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\PdfViewer\PdfViewer.addin" SelfReg="false" NextFile="PdfViewer.dll"/>
@@ -129,14 +148,26 @@
     <ROW File="StringResources.de.resources" Component_="StringResources.de.resources" FileName="STRING~1.RES|StringResources.de.resources" Attributes="0" SourcePath="..\bin\data\resources\StringResources.de.resources" SelfReg="false" NextFile="ImageViewer.addin"/>
     <ROW File="SyntaxEditor.addin" Component_="SyntaxEditor.addin" FileName="SYNTAX~1.ADD|SyntaxEditor.addin" Attributes="0" SourcePath="..\bin\AddIns\SyntaxEditor\SyntaxEditor.addin" SelfReg="false" NextFile="SyntaxEditor.dll"/>
     <ROW File="SyntaxEditor.dll" Component_="SyntaxEditor.dll" FileName="SYNTAX~1.DLL|SyntaxEditor.dll" Attributes="0" SourcePath="..\bin\AddIns\SyntaxEditor\SyntaxEditor.dll" SelfReg="false" NextFile="PsdViewer.dll"/>
+    <ROW File="Telerik.WinControls.ChartView.dll" Component_="Telerik.WinControls.ChartView.dll" FileName="TELERI~1.DLL|Telerik.WinControls.ChartView.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.WinControls.ChartView.dll" SelfReg="false" NextFile="Telerik.WinControls.dll_2"/>
+    <ROW File="Telerik.WinControls.GridView.dll" Component_="Telerik.WinControls.GridView.dll" FileName="TELERI~3.DLL|Telerik.WinControls.GridView.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.WinControls.GridView.dll" SelfReg="false" NextFile="Telerik.WinControls.PdfViewer.dll_1"/>
     <ROW File="Telerik.WinControls.PdfViewer.dll" Component_="Telerik.WinControls.PdfViewer.dll" FileName="TELERI~2.DLL|Telerik.WinControls.PdfViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\PdfViewer\Telerik.WinControls.PdfViewer.dll" SelfReg="false" NextFile="Telerik.WinControls.UI.dll_1"/>
+    <ROW File="Telerik.WinControls.PdfViewer.dll_1" Component_="Telerik.WinControls.PdfViewer.dll_1" FileName="TELERI~4.DLL|Telerik.WinControls.PdfViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.WinControls.PdfViewer.dll" SelfReg="false" NextFile="Telerik.WinControls.PivotGrid.dll"/>
+    <ROW File="Telerik.WinControls.PivotGrid.dll" Component_="Telerik.WinControls.PivotGrid.dll" FileName="TELERI~5.DLL|Telerik.WinControls.PivotGrid.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.WinControls.PivotGrid.dll" SelfReg="false" NextFile="Telerik.WinControls.RadDock.dll"/>
+    <ROW File="Telerik.WinControls.RadDock.dll" Component_="Telerik.WinControls.RadDock.dll" FileName="TELERI~6.DLL|Telerik.WinControls.RadDock.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.WinControls.RadDock.dll" SelfReg="false" NextFile="Telerik.WinControls.UI.dll_2"/>
     <ROW File="Telerik.WinControls.RichTextBox.dll" Component_="Telerik.WinControls.RichTextBox.dll" FileName="TELERI~2.DLL|Telerik.WinControls.RichTextBox.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\Telerik.WinControls.RichTextBox.dll" SelfReg="false" NextFile="Telerik.WinControls.UI.dll"/>
     <ROW File="Telerik.WinControls.UI.dll" Component_="Telerik.WinControls.UI.dll" FileName="TELERI~3.DLL|Telerik.WinControls.UI.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\Telerik.WinControls.UI.dll" SelfReg="false" NextFile="TelerikCommon.dll"/>
     <ROW File="Telerik.WinControls.UI.dll_1" Component_="Telerik.WinControls.UI.dll_1" FileName="TELERI~3.DLL|Telerik.WinControls.UI.dll" Attributes="0" SourcePath="..\bin\AddIns\PdfViewer\Telerik.WinControls.UI.dll" SelfReg="false" NextFile="TelerikCommon.dll_1"/>
+    <ROW File="Telerik.WinControls.UI.dll_2" Component_="Telerik.WinControls.UI.dll_2" FileName="TELERI~7.DLL|Telerik.WinControls.UI.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.WinControls.UI.dll" SelfReg="false" NextFile="Telerik.Windows.Controls.dll"/>
     <ROW File="Telerik.WinControls.dll" Component_="Telerik.WinControls.dll" FileName="TELERI~1.DLL|Telerik.WinControls.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\Telerik.WinControls.dll" SelfReg="false" NextFile="Telerik.WinControls.RichTextBox.dll"/>
     <ROW File="Telerik.WinControls.dll_1" Component_="Telerik.WinControls.dll_1" FileName="TELERI~1.DLL|Telerik.WinControls.dll" Attributes="0" SourcePath="..\bin\AddIns\PdfViewer\Telerik.WinControls.dll" SelfReg="false" NextFile="Telerik.WinControls.PdfViewer.dll"/>
+    <ROW File="Telerik.WinControls.dll_2" Component_="Telerik.WinControls.dll_2" FileName="TELERI~2.DLL|Telerik.WinControls.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.WinControls.dll" SelfReg="false" NextFile="Telerik.WinControls.GridView.dll"/>
+    <ROW File="Telerik.Windows.Controls.dll" Component_="Telerik.Windows.Controls.dll" FileName="TELERI~8.DLL|Telerik.Windows.Controls.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\Telerik.Windows.Controls.dll" SelfReg="false" NextFile="TelerikCommon.dll_2"/>
     <ROW File="TelerikCommon.dll" Component_="TelerikCommon.dll" FileName="TELERI~4.DLL|TelerikCommon.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\TelerikCommon.dll" SelfReg="false" NextFile="WordViewer.addin"/>
     <ROW File="TelerikCommon.dll_1" Component_="TelerikCommon.dll_1" FileName="TELERI~4.DLL|TelerikCommon.dll" Attributes="0" SourcePath="..\bin\AddIns\PdfViewer\TelerikCommon.dll" SelfReg="false" NextFile="XmlViewer.addin"/>
+    <ROW File="TelerikCommon.dll_2" Component_="TelerikCommon.dll_2" FileName="TELERI~9.DLL|TelerikCommon.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\TelerikCommon.dll" SelfReg="false" NextFile="TelerikData.dll"/>
+    <ROW File="TelerikData.dll" Component_="TelerikData.dll" FileName="TELER~10.DLL|TelerikData.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\TelerikData.dll" SelfReg="false" NextFile="TsspViewer.addin"/>
+    <ROW File="TsspViewer.addin" Component_="TsspViewer.addin" FileName="TSSPVI~1.ADD|TsspViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\TsspViewer.addin" SelfReg="false" NextFile="TsspViewer.dll"/>
+    <ROW File="TsspViewer.dll" Component_="TsspViewer.dll" FileName="TSSPVI~1.DLL|TsspViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\TsspViewer\TsspViewer.dll" SelfReg="false"/>
     <ROW File="Viewer.exe" Component_="Viewer.exe" FileName="Viewer.exe" Attributes="0" SourcePath="..\bin\Viewer.exe" SelfReg="false" NextFile="StringResources.de.resources" DigSign="true"/>
     <ROW File="WordViewer.addin" Component_="WordViewer.addin" FileName="WORDVI~1.ADD|WordViewer.addin" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\WordViewer.addin" SelfReg="false" NextFile="WordViewer.dll"/>
     <ROW File="WordViewer.dll" Component_="WordViewer.dll" FileName="WORDVI~1.DLL|WordViewer.dll" Attributes="0" SourcePath="..\bin\AddIns\WordViewer\WordViewer.dll" SelfReg="false" NextFile="PdfViewer.addin"/>

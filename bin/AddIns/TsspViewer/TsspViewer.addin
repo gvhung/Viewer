@@ -1,0 +1,25 @@
+﻿<AddIn name        = "Tssp Viewer"
+			 author      = "Chris Anders"
+			 url         = "http://furesoft.xyz/"
+			 description = "Open Programming Source Files with Highlighting">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.Tssp" version = "@TsspViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="TsspViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "Tssp" description = "Telerik Theme" extension = ".tssp" />
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "Tssp"
+					 class = "TsspViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

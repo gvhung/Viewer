@@ -14,12 +14,13 @@
 	</Runtime>
 	
 	<Path name = "/Workspace/FileFilter">
-			<FileFilter id = "PNG" description = "PNG Image" extension = ".png"/>
-			<FileFilter id = "JPG" description = "JPEG Image" extension = ".jpg"/>
-			<FileFilter id = "GIF" description = "GIF Image" extension = ".gif"/>
-			<FileFilter id = "ICON" description = "ICON" extension = ".ico"/>
-			<FileFilter id = "WMF" description = "WMF Image" extension = ".wmf"/>
-			<FileFilter id = "EMF" description = "EMF Image" extension = ".emf"/>
+		<FileFilter id = "PNG" description = "PNG Image" extension = ".png"/>
+		<FileFilter id = "JPG" description = "JPEG Image" extension = ".jpg"/>
+		<FileFilter id = "GIF" description = "GIF Image" extension = ".gif"/>
+		<FileFilter id = "ICON" description = "ICON" extension = ".ico"/>
+		<FileFilter id = "WMF" description = "WMF Image" extension = ".wmf"/>
+		<FileFilter id = "EMF" description = "EMF Image" extension = ".emf"/>
+		<FileFilter id = "BMP" description = "BMP Image" extension = ".bmp"/>
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">

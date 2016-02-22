@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\IniViewer\IniViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\IniViewer\IniViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\IniViewer\IniViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\IniViewer\obj\Debug\IniViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\IniViewer\obj\Debug\IniViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\IniViewer\obj\Debug\IniViewer.pdb

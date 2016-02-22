@@ -1,0 +1,25 @@
+﻿<AddIn name        = "Ini Viwerr"
+			 author      = "Chris Anders"
+			 url         = "http://furesoft.xyz/"
+			 description = "Open Programming Source Files with Highlighting">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.Ini" version = "@IniViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="IniViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "Ini" description = "Ini Configuration" extension = ".ini" />
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "Ini"
+					 class = "IniViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

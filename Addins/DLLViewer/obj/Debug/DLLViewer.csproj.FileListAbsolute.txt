@@ -1,0 +1,12 @@
+C:\Users\filmee24\Documents\GitHub\bin\AddIns\DllViewer\DLLViewer.dll
+C:\Users\filmee24\Documents\GitHub\bin\AddIns\DllViewer\DLLViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\DLLViewer\obj\Debug\DLLViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\DLLViewer\obj\Debug\DLLViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\DLLViewer\obj\Debug\DLLViewer.pdb
+C:\Users\filmee24\Documents\GitHub\bin\AddIns\DllViewer\DllViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\DllViewer\DllViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\DllViewer\DLLViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\DllViewer\DLLViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.pdb

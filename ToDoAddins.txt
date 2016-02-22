@@ -1,0 +1,5 @@
+.dbf
+.mid
+.zip/.rar
+.ttf
+.tssp / teleri theme

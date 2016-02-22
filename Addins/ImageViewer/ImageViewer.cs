@@ -21,6 +21,7 @@ namespace ImageViewer
 				case ".tiff": return new ImageViewContent(fileName);
 				case ".wmf": return new ImageViewContent(fileName);
 				case ".emf": return new ImageViewContent(fileName);
+				case ".bmp": return new ImageViewContent(fileName);
 			}
 
 			return null;

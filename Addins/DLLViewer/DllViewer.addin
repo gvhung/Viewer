@@ -1,0 +1,25 @@
+﻿<AddIn name        = "DLL Viewer"
+			 author      = "Chris Anders"
+			 url         = "http://furesoft.xyz/"
+			 description = "Open Programming Source Files with Highlighting">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.DLL" version = "@DllViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="DllViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "DLL" description = "Dynamic Link Library" extension = ".dll" />
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "DLL"
+					 class = "DllViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

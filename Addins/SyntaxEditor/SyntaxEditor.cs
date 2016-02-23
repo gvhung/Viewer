@@ -29,21 +29,8 @@ namespace SyntaxEditor
 	{
 		private string extension;
 		FastColoredTextBox textBox = new FastColoredTextBox();
-		
-		public SyntaxViewContent()
-		{
-			textBox.ReadOnly = true;
-			textBox.AcceptsTab = true;
-			textBox.Refresh();
-		}
-		
-		public SyntaxViewContent(string fileName) : this()
-		{
-			textBox.OpenFile(fileName);
-			this.FileName = fileName;
-		}
 
-		public SyntaxViewContent(string fileName, string extension) : this(fileName)
+		public SyntaxViewContent(string fileName, string extension)
 		{
 			this.extension = extension;
 
@@ -71,7 +58,11 @@ namespace SyntaxEditor
 					textBox.Language = Language.VB;
 					break;
 			}
-			
+
+			textBox.OpenFile(fileName);
+			this.FileName = fileName;
+			textBox.ReadOnly = true;
+			textBox.AcceptsTab = true;
 		}
 
 		public override Control Control => textBox;

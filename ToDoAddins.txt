@@ -1,3 +1,5 @@
 .mid
 .zip/.rar
 .tssp / teleri theme
+
+repair dllviewer bug

@@ -6,3 +6,4 @@ C:\Users\filmee24\Documents\GitHub\Viewer\bin\ICSharpCode.Core.dll
 C:\Users\filmee24\Documents\GitHub\Viewer\bin\ICSharpCode.Core.pdb
 C:\Users\filmee24\Documents\GitHub\Viewer\ICSharpCode.Core\obj\Debug\ICSharpCode.Core.dll
 C:\Users\filmee24\Documents\GitHub\Viewer\ICSharpCode.Core\obj\Debug\ICSharpCode.Core.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\ICSharpCode.Core\obj\Debug\ICSharpCode.Core.csprojResolveAssemblyReference.cache

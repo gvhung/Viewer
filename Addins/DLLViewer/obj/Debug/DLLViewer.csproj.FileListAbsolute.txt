@@ -10,3 +10,5 @@ C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\DllViewer\DLLViewer.pdb
 C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.csprojResolveAssemblyReference.cache
 C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.dll
 C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.Properties.Resources.resources
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DLLViewer\obj\Debug\DLLViewer.csproj.GenerateResource.Cache

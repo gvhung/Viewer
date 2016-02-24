@@ -164,15 +164,36 @@ namespace Base
 			// 
 			// Workbench
 			// 
+			this.AllowDrop = true;
 			this.ClientSize = new System.Drawing.Size(284, 261);
 			this.Controls.Add(this.statusStrip1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Workbench";
+			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Workbench_DragDrop);
+			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Workbench_DragEnter);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
+		}
+
+		private void Workbench_DragEnter(object sender, DragEventArgs e)
+		{
+			if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+		}
+
+		private void Workbench_DragDrop(object sender, DragEventArgs e)
+		{
+			string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+			foreach (string file in files)
+			{
+				IViewContent content = DisplayBindingManager.CreateViewContent(file);
+				if (content != null)
+				{
+					instance.ShowContent(content);
+				}
+			}
 		}
 	}
 }

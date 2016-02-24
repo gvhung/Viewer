@@ -22,7 +22,7 @@ namespace PsdViewer
 	
 	public class ImageViewContent : FileViewContent
 	{
-		PictureBox textBox = new PictureBox();
+		Cyotek.Windows.Forms.ImageBox textBox = new Cyotek.Windows.Forms.ImageBox();
 		
 		public ImageViewContent()
 		{
@@ -39,12 +39,8 @@ namespace PsdViewer
 
 		private async void loadPSD(string fileName)
 		{
-			await Task.Run(() =>
-			{
-				var psd = new PsdFile(fileName);
-				textBox.Image = psd.CompositImage;
-			});
-
+			var psd = new PsdFile(fileName);
+			textBox.Image = psd.CompositImage;
 			StatusService.SetStatus("Done");
 		}
 

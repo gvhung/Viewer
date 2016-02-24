@@ -23,7 +23,7 @@
 	</Path>
 	
 	<Path name = "/Workspace/DisplayBindings">
-		<Class id = "Text" class = "Base.TextDisplayBinding"/>
+		<!--<Class id = "Text" class = "Base.TextDisplayBinding"/>-->
 	</Path>
 	
 	<Path name = "/Workspace/Tools">

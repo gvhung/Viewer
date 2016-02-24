@@ -30,7 +30,7 @@ namespace ImageViewer
 	
 	public class ImageViewContent : FileViewContent
 	{
-		PictureBox textBox = new PictureBox();
+		Cyotek.Windows.Forms.ImageBox textBox = new Cyotek.Windows.Forms.ImageBox();
 		
 		public ImageViewContent()
 		{
@@ -39,7 +39,7 @@ namespace ImageViewer
 
 		public ImageViewContent(string fileName) : this()
 		{
-			textBox.Load(fileName);
+			textBox.Image = Image.FromFile(fileName);
 
 			this.FileName = fileName;
 		}

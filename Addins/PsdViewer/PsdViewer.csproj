@@ -62,6 +62,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Viewer.Core\Viewer.Core.csproj">
+      <Project>{bc7d5b8f-5279-4f4f-869f-9b3464dd931b}</Project>
+      <Name>Viewer.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Base\Base.csproj">
       <Project>{c9a2b6bc-5260-4de3-8082-dce8b391f7bb}</Project>
       <Name>Base</Name>

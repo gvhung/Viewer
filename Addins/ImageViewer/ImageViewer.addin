@@ -26,6 +26,6 @@
 	<Path name = "/Workspace/DisplayBindings">
 		<Class id = "IMG"
 					 class = "ImageViewer.DisplayBinding"
-					 insertbefore = "Text"/>
+					 insertbefore = "Text" />
 	</Path>
 </AddIn>

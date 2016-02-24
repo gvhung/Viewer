@@ -22,7 +22,7 @@ namespace SvgViewer
 	
 	public class SvgViewContent : FileViewContent
 	{
-		PictureBox textBox = new PictureBox();
+		Cyotek.Windows.Forms.ImageBox textBox = new Cyotek.Windows.Forms.ImageBox();
 		
 		public SvgViewContent()
 		{

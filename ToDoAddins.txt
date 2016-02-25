@@ -1,5 +1,5 @@
 .mid
 .zip/.rar
-.tssp / teleri theme
+.tssp / telerik theme
 
 repair dllviewer bug

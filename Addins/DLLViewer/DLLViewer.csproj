@@ -63,6 +63,7 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\dll_file_37106.jpg" />
     <None Include="Resources\IC591787.jpeg" />
     <None Include="Resources\IC591785.jpeg" />
     <None Include="Resources\IC572377.jpeg" />

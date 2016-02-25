@@ -84,6 +84,7 @@
     <Compile Include="IViewContent.cs" />
     <Compile Include="FileViewContent.cs" />
     <Compile Include="IDisplayBinding.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Workbench.resx">
       <DependentUpon>Workbench.cs</DependentUpon>
     </EmbeddedResource>

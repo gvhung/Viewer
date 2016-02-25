@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DllViewer
 {
@@ -35,12 +36,16 @@ namespace DllViewer
         {
             var assembly = Assembly.LoadFile(fileName);
             var root = new TreeNode(assembly.GetName().Name);
+            root.ImageIndex = 5;
+            root.SelectedImageIndex = 5;
+
             var il = new ImageList();
             il.Images.Add(Resources.enums);
             il.Images.Add(Resources.properties);
             il.Images.Add(Resources.methods);
             il.Images.Add(Resources.events);
             il.Images.Add(Resources.namespaces);
+            il.Images.Add(Resources.assembly);
 
             textBox.ImageList = il;
             textBox.StateImageList = il;
@@ -86,23 +91,30 @@ namespace DllViewer
                     var methods = new TreeNode("Methods");
                     methods.ImageIndex = 2;
                     methods.SelectedImageIndex = 2;
-                    foreach (var method in type.GetMethods())
+                    foreach (var method in GetMethods(type))
                     {
                         var mn = new TreeNode(method.Name);
                         mn.ImageIndex = 2;
                         mn.SelectedImageIndex = 2;
+
+                        if (method.Name.StartsWith("set_") || method.Name.StartsWith("get")) continue;
+                        if (method.Name.StartsWith("add_") || method.Name.StartsWith("remove_")) continue;
 
                         methods.Nodes.Add(mn);
                     }
                     n.Nodes.Add(methods);
 
                     namesp.Nodes.Add(n);
-                    root.Nodes.Add(namesp);
-                }
-                
 
-                textBox.Nodes.Add(root);
+                }
+                root.Nodes.Add(namesp);
+
             }
+
+            root.Expand();
+
+            textBox.Nodes.Add(root);
+            this.FileName = fileName;
         }
 
         private Dictionary<string, List<Type>> GetNamespaces(Assembly assembly)
@@ -125,6 +137,20 @@ namespace DllViewer
             }
 
             return res;
+        }
+        private MethodInfo[] GetMethods(Type t)
+        {
+            var d = new Dictionary<string, MethodInfo>();
+
+            foreach (var method in t.GetMethods())
+            {
+                try
+                {
+                    d.Add(method.Name, method);
+                } catch { }
+            }
+
+            return d.Values.ToArray();
         }
 
         public override Control Control => textBox;

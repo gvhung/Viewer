@@ -73,7 +73,10 @@ namespace DllViewer
 
                         props.Nodes.Add(mn);
                     }
-                    n.Nodes.Add(props);
+                    if (props.Nodes.Count > 0)
+                    {
+                        n.Nodes.Add(props);
+                    }
 
                     var events = new TreeNode("Events");
                     events.ImageIndex = 3;
@@ -86,7 +89,10 @@ namespace DllViewer
 
                         events.Nodes.Add(mn);
                     }
-                    n.Nodes.Add(events);
+                    if (events.Nodes.Count > 0)
+                    {
+                        n.Nodes.Add(events);
+                    }
 
                     var methods = new TreeNode("Methods");
                     methods.ImageIndex = 2;
@@ -102,7 +108,11 @@ namespace DllViewer
 
                         methods.Nodes.Add(mn);
                     }
-                    n.Nodes.Add(methods);
+
+                    if (methods.Nodes.Count > 0)
+                    {
+                        n.Nodes.Add(methods);
+                    }
 
                     namesp.Nodes.Add(n);
 

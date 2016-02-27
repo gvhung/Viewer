@@ -1,0 +1,25 @@
+﻿<AddIn name        = "SolutionViewer"
+			 author      = "Chris Anders"
+			 url         = "http://www.codeproject.com/TBD"
+			 description = "Supports editing .rtf files in the ICSharpCode.Core example editor">
+	
+	<Manifest>
+		<!-- unique name of the AddIn, used when others AddIns want to reference this AddIn -->
+		<Identity name="Viewer.Addins.SolutionViewer" version = "@SolutionViewer.dll"/>
+		<Dependency addin="Viewer.Base" version="1.0"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly="SolutionViewer.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/FileFilter">
+		<FileFilter id = "Solution" description = "Solution File"  extension = ".sln"/>
+	</Path>
+	
+	<Path name = "/Workspace/DisplayBindings">
+		<Class id = "SLN"
+					 class = "SolutionViewer.DisplayBinding"
+					 insertbefore = "Text"/>
+	</Path>
+</AddIn>

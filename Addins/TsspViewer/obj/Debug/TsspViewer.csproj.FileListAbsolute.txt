@@ -1,0 +1,9 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\TsspViewer\TsspViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\TsspViewer\TsspViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\TsspViewer\TsspViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\TsspViewer\obj\Debug\TsspViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\TsspViewer\obj\Debug\TsspViewer.MainWindow.resources
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\TsspViewer\obj\Debug\TsspViewer.csproj.GenerateResource.Cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\TsspViewer\obj\Debug\TsspViewer.dll.licenses
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\TsspViewer\obj\Debug\TsspViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\TsspViewer\obj\Debug\TsspViewer.pdb

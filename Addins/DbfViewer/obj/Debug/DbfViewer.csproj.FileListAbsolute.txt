@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\DbfViewer\DbfViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\DbfViewer\DbfViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\DbfViewer\DbfViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DbfViewer\obj\Debug\DbfViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DbfViewer\obj\Debug\DbfViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\DbfViewer\obj\Debug\DbfViewer.pdb

@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\SolutionViewer\SolutionViewer.addin
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\SolutionViewer\SolutionViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\bin\AddIns\SolutionViewer\SolutionViewer.pdb
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\SolutionViewer\obj\Debug\SolutionViewer.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\SolutionViewer\obj\Debug\SolutionViewer.dll
+C:\Users\filmee24\Documents\GitHub\Viewer\Addins\SolutionViewer\obj\Debug\SolutionViewer.pdb

@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Forms;
 using ICSharpCode.Core;
+using System.Windows.Threading;
 
 namespace Base
 {
@@ -26,8 +27,6 @@ namespace Base
 		}
 		
 		MenuStrip menu;
-		private StatusStrip statusStrip1;
-		private ToolStripStatusLabel toolStripStatusLabel1;
 		private TabControl tabControl1;
 		Panel contentPanel;
 		
@@ -44,9 +43,6 @@ namespace Base
 			
 			menu = new MenuStrip();
 			MenuService.AddItemsToMenu(menu.Items, this, "/Workbench/MainMenu");
-
-			StatusService.SetLabel(toolStripStatusLabel1);
-			StatusService.SetStatus("");
 
 			this.Controls.Add(menu);
 			
@@ -128,9 +124,9 @@ namespace Base
 			page.Controls.Add(ctl);
 			ctl.Focus();
 
-			tabControl1.TabPages.Add(page);
-
-            tabControl1.SelectTab(page);
+		    tabControl1.TabPages.Add(page);
+			
+			tabControl1.SelectTab(page);
 			
 			content.TitleChanged += OnTitleChanged;
 			OnTitleChanged(content, EventArgs.Empty);
@@ -148,26 +144,8 @@ namespace Base
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workbench));
-			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
-			this.statusStrip1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// statusStrip1
-			// 
-			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.toolStripStatusLabel1});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 326);
-			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(873, 22);
-			this.statusStrip1.TabIndex = 0;
-			this.statusStrip1.Text = "statusStrip1";
-			// 
-			// toolStripStatusLabel1
-			// 
-			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-			this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
 			// 
 			// tabControl1
 			// 
@@ -175,7 +153,7 @@ namespace Base
 			this.tabControl1.Location = new System.Drawing.Point(0, 0);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(873, 326);
+			this.tabControl1.Size = new System.Drawing.Size(873, 348);
 			this.tabControl1.TabIndex = 1;
 			// 
 			// Workbench
@@ -183,15 +161,11 @@ namespace Base
 			this.AllowDrop = true;
 			this.ClientSize = new System.Drawing.Size(873, 348);
 			this.Controls.Add(this.tabControl1);
-			this.Controls.Add(this.statusStrip1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Workbench";
 			this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Workbench_DragDrop);
 			this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Workbench_DragEnter);
-			this.statusStrip1.ResumeLayout(false);
-			this.statusStrip1.PerformLayout();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 

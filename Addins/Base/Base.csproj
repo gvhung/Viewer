@@ -67,6 +67,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -74,7 +75,6 @@
     <Compile Include="FilterBuilder\FilterGroup.cs" />
     <Compile Include="FilterBuilder\Helpers.cs" />
     <Compile Include="FilterBuilder\SystemFileType.cs" />
-    <Compile Include="StatusService.cs" />
     <Compile Include="Workbench.cs">
       <SubType>Form</SubType>
     </Compile>

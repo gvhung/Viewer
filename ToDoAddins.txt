@@ -3,3 +3,4 @@
 .tssp / telerik theme
 
 repair dllviewer bug
+continue solutionviewer

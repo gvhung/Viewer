@@ -4,6 +4,7 @@
 using System;
 using System.Windows.Forms;
 using ICSharpCode.Core;
+using System.Threading.Tasks;
 
 namespace Base
 {	
@@ -12,25 +13,26 @@ namespace Base
 		public override void Run()
 		{
 			Workbench workbench = (Workbench)this.Owner;
-			if (workbench.CloseCurrentContent()) {
-				using (OpenFileDialog dlg = new OpenFileDialog()) {
+			if (workbench.CloseCurrentContent())
+			{
+				using (OpenFileDialog dlg = new OpenFileDialog())
+				{
 					dlg.CheckFileExists = true;
 					dlg.DefaultExt = ".txt";
 					dlg.Filter = FileViewContent.GetFileFilter("/Workspace/FileFilter");
-					if (dlg.ShowDialog() == DialogResult.OK) {
-						StatusService.SetStatus("Loading "+ dlg.FileName + "... ");
+					if (dlg.ShowDialog() == DialogResult.OK)
+					{
 						IViewContent content = DisplayBindingManager.CreateViewContent(dlg.FileName);
-						if (content != null) {
+						if (content != null)
+						{
 							workbench.ShowContent(content);
 						}
-						StatusService.SetStatus("Fertig ");
 					}
 				}
 			}
 		}
 	}
-	
-	
+
 	public class ExitCommand : AbstractMenuCommand
 	{
 		public override void Run()

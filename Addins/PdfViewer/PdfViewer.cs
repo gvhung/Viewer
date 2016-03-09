@@ -31,6 +31,8 @@ namespace PdfViewer
 		
 		public PortableDocumentViewContent(string fileName) : this()
 		{
+			this.FileName = fileName;
+			
 			Load(fileName);
 		}
 

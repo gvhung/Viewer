@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Resources;
+using System.Collections;
 
 namespace DllViewer
 {
@@ -51,6 +53,36 @@ namespace DllViewer
             textBox.StateImageList = il;
 
             var namespaces = GetNamespaces(assembly);
+
+            var res = new TreeNode("Ressources");
+
+            var refs = new TreeNode("References");
+            refs.ImageIndex = 5;
+            refs.SelectedImageIndex = 5;
+
+            root.Nodes.Add(res);
+            root.Nodes.Add(refs);
+
+            foreach (var resource in assembly.GetManifestResourceNames())
+            {
+                var n = new TreeNode(resource);
+
+                foreach (DictionaryEntry name in new ResourceReader(assembly.GetManifestResourceStream(resource)))
+                {
+                    n.Nodes.Add(new TreeNode(name.Key.ToString()));
+                }
+
+                res.Nodes.Add(n);
+            }
+
+            foreach (var re in assembly.GetReferencedAssemblies())
+            {
+                var tn = new TreeNode(re.Name);
+                tn.ImageIndex = 5;
+                tn.SelectedImageIndex = 5;
+
+                refs.Nodes.Add(tn);
+            }
 
             foreach (var ns in namespaces)
             {
